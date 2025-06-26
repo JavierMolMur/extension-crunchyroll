@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Ocultar Títulos en Crunchyroll",
+  "version": "1.0",
+  "description": "Sustituye los títulos de episodios por '*' en Crunchyroll.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.crunchyroll.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
